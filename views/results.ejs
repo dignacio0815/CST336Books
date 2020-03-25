@@ -1,0 +1,17 @@
+<%- include("templates/header");-%>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Search Result</h1>        
+            <button class="btn btn-info" onclick="location.href='/'">Search Again</button>
+        </div>
+            <ul id="movie-list">
+                <img class="poster" src= <%= data.cover.medium %> >
+                <div>
+                    <h1> Novel Name:<%=data.title %> </h1>
+                    <h2> Author: <%=data.authors[0].name %> </h2>
+                    <h3> Number of pages: <%= data.number_of_pages%>  </h3>
+                </div>
+            </ul>
+    </div>
+    
+<%- include("templates/footer");-%>
